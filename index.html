@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate Homes</title>
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">RealEstate<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn"><i class="fa fa-bars"></i></div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Find Your Dream Home</h1>
+      <p>Luxury apartments, modern houses, and affordable rentals.</p>
+      <a href="#properties" class="btn">Browse Properties</a>
+    </div>
+  </section>
+
+  <!-- PROPERTIES -->
+  <section id="properties" class="properties">
+    <h2 class="section-title">Our Properties</h2>
+
+    <div class="property-grid">
+      <div class="property-card">
+        <img src="https://picsum.photos/400/250" alt="Property 1">
+        <h3>Modern Apartment</h3>
+        <p>$350,000 • 3 Beds • 2 Baths</p>
+        <a class="btn small-btn" href="#">View Details</a>
+      </div>
+
+      <div class="property-card">
+        <img src="https://picsum.photos/400/251" alt="Property 2">
+        <h3>Luxury Condo</h3>
+        <p>$580,000 • 2 Beds • 2 Baths</p>
+        <a class="btn small-btn" href="#">View Details</a>
+      </div>
+
+      <div class="property-card">
+        <img src="https://picsum.photos/400/252" alt="Property 3">
+        <h3>Family House</h3>
+        <p>$780,000 • 4 Beds • 3 Baths</p>
+        <a class="btn small-btn" href="#">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROPERTY -->
+  <section id="featured" class="featured">
+    <h2 class="section-title">Featured Property</h2>
+
+    <div class="featured-box">
+      <img src="https://picsum.photos/900/400" alt="Featured Property">
+      <div class="featured-text">
+        <h3>Luxury Villa in California</h3>
+        <p>
+          This stunning villa offers ocean views, private pool, modern design,
+          and top-tier interior finishings. Perfect for families or vacation rentals.
+        </p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 RealEstate. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPT for mobile menu -->
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
